@@ -10,9 +10,9 @@ Este repositório contém a resolução do exercício 00 do Módulo 02 da Piscin
 
 ## 📜 Índice
 
-* [Visão Geral do Projeto](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML)
-* [Ferramentas Utilizadas](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML)
-* [Estrutura do Diagrama](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML)
+* [Visão Geral do Projeto](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML/ex00#-vis%C3%A3o-geral-do-projeto)
+* [Ferramentas Utilizadas](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML/ex00#%EF%B8%8F-ferramentas-utilizadas)
+* [Estrutura do Diagrama](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML/ex00#-estrutura-do-diagrama)
 * [Autora](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML#-autora)
 
 ---
@@ -86,7 +86,7 @@ Crie arquivos `sequence_accelerate.puml`, etc., e gere PNGs com PlantUML ou expo
 
 ---
 
-👩🏻 Autora
+# 👩🏻 Autora
 [Mayara Carvalho / macarval]
 
 ---
