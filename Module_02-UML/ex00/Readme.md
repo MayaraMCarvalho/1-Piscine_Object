@@ -13,7 +13,7 @@ Este repositório contém a resolução do exercício 00 do Módulo 02 da Piscin
 * [Visão Geral do Projeto](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML/ex00#-vis%C3%A3o-geral-do-projeto)
 * [Ferramentas Utilizadas](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML/ex00#%EF%B8%8F-ferramentas-utilizadas)
 * [Estrutura do Diagrama](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML/ex00#-estrutura-do-diagrama)
-* [Autora](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML#-autora)
+* [Autora](https://github.com/MayaraMCarvalho/1-Piscine_Object/tree/master/Module_02-UML/ex00#-autora)
 
 ---
 
@@ -59,34 +59,33 @@ A classe `Car` atua como o contêiner principal (Composição), agregando os sub
 - **Agregação/Associação (Diamante Vazio ou Seta):** Utilizada onde há referência via ponteiros (ex: `Transmission` aponta para `Wheel`). Ou seja, para coleções de objetos que podem existir independentemente.
 - **Herança (Seta triangular):** Utilizada para especializações (ex: `Injector` **é um** `LinkablePart`).
 
-### 5. Multiplicidades sugeridas (exemplos práticos)
+---
 
-* `Direction` → `Wheel` : `2..*` (duas ou mais rodas vinculadas à direção)
-* `Transmission` → `Wheel` : `0..*` (transmissão pode não ter wheels conectadas em modelos isolados)
-* `Motor` contém `Injector`, `ExplosionChamber`, `Crankshaft` : `1` (composição)
-* `Car` contém `BrakeController`, `Direction`, `Transmission`, `Motor`, `Electronics`, `Cockpit` : `1`
+## 💡 Decisões de Implementação e Bônus
 
-> Ajuste multiplicidades se você tiver motivos específicos (ex.: veículo com 4 rodas exatas: use `4`).
+Para garantir clareza e aderência às boas práticas de UML, as seguintes convenções foram adotadas no diagrama:
 
-### 6. Visibilidade e nomes (convenções)
+### 1. Multiplicidades
+Foram definidas multiplicidades lógicas para o domínio automotivo:
+* `Direction` ↔ `Wheel` : `2..*` (Mínimo de duas rodas direcionais).
+* `Transmission` → `Wheel` : `0..*`.
+* `Motor` (Composição): `1` para seus componentes internos vitais.
 
-* Atributos privados: prefixo `-` (ex.: `- demultiplier: int`).
-* Métodos públicos: prefixo `+` (ex.: `+ void execute(float p_pression)`).
-* Métodos/propriedades protegidos: `#` quando necessário.
+### 2. Visibilidade e Encapsulamento
+* **Atributos:** Definidos como privados (`-`) para garantir o encapsulamento dos dados.
+* **Métodos:** Definidos como públicos (`+`) quando representam a interface de comunicação do objeto (ex: `+ execute()`).
 
-Sugestão: mantenha atributos privados e forneça getters/setters públicos apenas quando necessário para a lógica de domínio.
-
-### 7. Diagramas de sequência (bônus) — cenários sugeridos
-
-1. **Acelerar** (Pedal → Injector → ExplosionChamber → Crankshaft → Transmission → Wheel)
-2. **Frear** (Pedal/Freio → BrakeController → Brake → Wheel)
-3. **Girar** (SteerWheel → DAE → Direction → Wheel)
-
-Crie arquivos `sequence_accelerate.puml`, etc., e gere PNGs com PlantUML ou exporte do draw.io.
+### 3. Diagramas de Sequência (Bônus)
+Foram elaborados diagramas adicionais para ilustrar a interação entre objetos em cenários críticos:
+1. **Aceleração:** Fluxo de `Pedal` até `Wheel`.
+2. **Frenagem:** Atuação do `BrakeController`.
+3. **Direção:** Comunicação entre `SteerWheel` e `Direction`.
 
 ---
 
 # 👩🏻 Autora
-[Mayara Carvalho / macarval]
+**Mayara Carvalho**
+<br>
+[:octocat: @MayaraMCarvalho](https://github.com/MayaraMCarvalho) | 42 Login: `macarval`
 
 ---
