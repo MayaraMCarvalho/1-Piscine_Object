@@ -56,7 +56,7 @@ A classe `Car` atua como o contêiner principal (Composição), agregando os sub
 
 ### 4. Relacionamentos Chave
 - **Composição (Diamante Preenchido):** Utilizada onde os objetos são instanciados diretamente dentro da classe (ex: `Motor` contém `Crankshaft`). Ou seja, onde a vida do componente depende do dono.
-- **Agregação/Associação (Diamante Vazio ou Seta):** Utilizada onde há referência via ponteiros (ex: `Transmission` aponta para `Wheel`). Ou seja, para coleções de objetos que podem existir independentemente.
+- **Agregação/Associação (Diamante Vazio):** Utilizada onde há referência via ponteiros (ex: `Transmission` aponta para `Wheel`). Ou seja, para coleções de objetos que podem existir independentemente.
 - **Herança (Seta triangular):** Utilizada para especializações (ex: `Injector` **é um** `LinkablePart`).
 
 ---
@@ -79,7 +79,6 @@ Foram definidas multiplicidades lógicas para o domínio automotivo:
 Foram elaborados diagramas adicionais para ilustrar a interação entre objetos em cenários críticos:
 1. **Aceleração:** Fluxo de `Pedal` até `Wheel`.
 2. **Frenagem:** Atuação do `BrakeController`.
-3. **Direção:** Comunicação entre `SteerWheel` e `Direction`.
 
 ---
 
